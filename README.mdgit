@@ -1,1 +1,1 @@
-"# Natalie-s-Business-Page"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/karin-zohar/Natalie-s-Business-Page.gitgit push -u origin main
+Natalie is a fitness trainer. Her website share information about her offered services as well as a quiz for potential customers. 
