@@ -1,0 +1,14 @@
+.hero {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: $hero-height;
+    width: 100%;
+
+    .hero-content {
+        height: 500px;
+        background-color: lightsteelblue;
+    }
+}

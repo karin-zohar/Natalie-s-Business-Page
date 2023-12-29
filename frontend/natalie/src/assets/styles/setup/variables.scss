@@ -1,0 +1,18 @@
+// Colors
+
+// Layout
+$layoutPadding: 40px;
+
+// Layout Breakpoints
+$break-narrow: 600px;
+$break-normal: 900px;
+$break-wide: 1200px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
+
+// Sizes
+$header-height: 80px;
+$hero-height: 600px;
+$hero-spacer: $hero-height - $header-height;

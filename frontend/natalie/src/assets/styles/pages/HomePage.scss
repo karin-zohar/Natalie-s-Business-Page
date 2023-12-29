@@ -1,0 +1,15 @@
+.home-page {
+    background-color: pink;
+    top: 0;
+    margin: 0;
+
+    .spacer {
+        margin-block-start: $hero-spacer;
+        height: 0;
+        background-color: yellow;
+    }
+
+    h1 {
+        background-color: palegreen;
+    }
+}

@@ -1,0 +1,33 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: $layoutPadding 1fr $layoutPadding;
+
+    > * {
+        grid-column: 2;
+    }
+
+    > *.full {
+        grid-column: 1/ -1;
+    }
+
+    @include for-wide-layout {
+        grid-template-columns:
+        minmax($layoutPadding, 1fr)
+        minmax(auto,$break-wide)
+        minmax($layoutPadding, 1fr);
+    }
+}
+
+.base-layout {
+    grid-template-rows: 1fr minmax(100vh, auto) 1fr;
+    > *:not(:first-child):not(:last-child){
+        grid-row: 2;
+    }
+    
+    .app-header {
+        grid-row:1;
+    }
+    .app-footer {
+        grid-row: 3;
+    }
+}
