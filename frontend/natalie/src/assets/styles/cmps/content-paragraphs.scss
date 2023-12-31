@@ -1,0 +1,60 @@
+.content-wrapper ul {
+    li {
+        margin-block: 2em;
+    }
+    .content-paragraph {
+        display: grid;
+        gap: 1rem;
+        padding-block-end: 1em;
+        @include for-normal-layout {
+            grid-template-columns: 1fr 1fr;
+            >* {
+                grid-row: 1;
+            }
+        }
+
+        .text-container {
+            @include for-normal-layout {
+                padding-inline-end: 4em;
+            }
+            .paragraph-title {
+                line-height: 1.3em;
+                font-size: 1.3em;
+                padding-block-end: 0.5em;
+            }
+            .paragraph-body {
+                line-height: 1.5em;
+            }
+        }
+
+        .img-container {
+            box-sizing: border-box;
+            overflow: hidden;
+            max-height: 250px;
+            img {
+                background-position: center;
+            }
+        }
+    }
+
+    @include for-normal-layout {
+        li:nth-child(even) {
+            .img-container {
+                grid-column: 1;
+            }
+            .text-container {
+                grid-column: 2;
+            }
+        }
+        
+        li:nth-child(odd) {
+            .img-container {
+                grid-column: 2;
+            }
+            .text-container {
+                grid-column: 1;
+            }
+        }
+    }
+
+}
