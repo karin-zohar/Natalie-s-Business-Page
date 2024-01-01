@@ -8,9 +8,8 @@ export function HomePage() {
         <section className="home-page main-layout full">
             <Hero />
             <div className="spacer"></div>
-            <h1>this is a home page</h1>
 
-            <section className="content-wrapper">
+            <section className="content-wrapper" id="content-wrapper">
                 <ul>
                     {contentParagraphs.map((paragraph, idx) => 
                     <li key={idx}>
@@ -19,6 +18,8 @@ export function HomePage() {
                     )}
                 </ul>
             </section>
+
+            <section id="test">blaaa</section>
         </section>
     )
 }

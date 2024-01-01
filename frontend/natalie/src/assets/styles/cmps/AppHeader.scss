@@ -1,5 +1,20 @@
 .app-header {
-    background-color:lightgoldenrodyellow;
+    position: fixed;
+    width: 100%;
     height: $header-height;
     z-index: 3000;
+    background-color: transparent;
+    transition: background-color 0.7s;
+
+    &.opaque-background {
+        background-color: #fff;
+    }
+
+    .app-nav {
+        ul li {
+            .active {
+                color: green;
+            }
+        }
+    }
 }

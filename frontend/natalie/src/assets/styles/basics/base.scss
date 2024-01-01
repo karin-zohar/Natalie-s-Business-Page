@@ -35,13 +35,14 @@ p {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 ul,
 li {
