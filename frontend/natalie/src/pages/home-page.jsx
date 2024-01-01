@@ -3,7 +3,6 @@ import { ContentParagraph } from '../cmps/content-paragraph'
 import {contentParagraphs} from '../constants/hompage-constants'
 
 export function HomePage() {
-    console.log('contentParagraphs: ', contentParagraphs)
     return (
         <section className="home-page main-layout full">
             <Hero />
@@ -18,8 +17,6 @@ export function HomePage() {
                     )}
                 </ul>
             </section>
-
-            <section id="test">blaaa</section>
         </section>
     )
 }

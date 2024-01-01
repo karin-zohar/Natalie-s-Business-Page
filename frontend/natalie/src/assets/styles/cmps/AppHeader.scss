@@ -10,6 +10,11 @@
         background-color: #fff;
     }
 
+    .toggle-menu {
+        @include clean-button;
+
+    }
+
     .app-nav {
         ul li {
             .active {

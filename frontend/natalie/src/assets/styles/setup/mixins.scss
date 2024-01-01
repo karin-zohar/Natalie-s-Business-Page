@@ -23,3 +23,11 @@
       @content;
     }
   }
+
+  // buttons
+
+  @mixin clean-button {
+    border: none;
+    background: none;
+    font-size: inherit;
+  }
