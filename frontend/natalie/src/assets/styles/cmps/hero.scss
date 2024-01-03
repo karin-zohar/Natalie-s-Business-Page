@@ -1,14 +1,19 @@
 .hero {
-    background-color: gray;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
-    height: $hero-height;
     width: 100%;
+    background-color: gray;
+    @include set-hero-height(2);
+
+    .hero-img-url {
+        z-index: -10;
+    }
 
     .hero-content {
-        height: 500px;
-        background-color: lightsteelblue;
+        width: 100%;
+        z-index: 100;
+        background-color: pink;
     }
 }

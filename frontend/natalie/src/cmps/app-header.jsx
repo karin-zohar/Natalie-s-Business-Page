@@ -40,7 +40,7 @@ export function AppHeader() {
     return (
         <header className={`app-header main-layout full ${getHeaderStyle()}`}>
             { isMobile ? (
-                <button className="toggle-menu">menu</button>
+                <button className="toggle-menu"></button>
             ) :
            ( <AppNav />)
             }

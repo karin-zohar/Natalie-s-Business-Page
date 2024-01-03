@@ -24,10 +24,20 @@
     }
   }
 
+  // hero height 
+
+  @mixin set-hero-height($index) {
+    height: nth($hero-heights, $index);
+    
+    @include for-normal-layout {
+      height: nth($hero-heights, 1);
+    }
+  }
+
   // buttons
 
   @mixin clean-button {
     border: none;
-    background: none;
+    background-color: transparent;
     font-size: inherit;
   }

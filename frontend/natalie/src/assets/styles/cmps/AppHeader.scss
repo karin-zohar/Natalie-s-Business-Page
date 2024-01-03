@@ -12,8 +12,12 @@
 
     .toggle-menu {
         @include clean-button;
-
-    }
+        height: 1.5rem;
+        width: 1.5rem;
+        background: url('../../img/icons/hamburger-menu.svg');
+        background-position: center;
+        margin-block: 1em;
+       }
 
     .app-nav {
         ul li {
