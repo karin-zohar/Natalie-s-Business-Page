@@ -7,7 +7,7 @@
     transition: background-color 0.7s;
 
     &.opaque-background {
-        background-color: #fff;
+        background-color: $background-color;
     }
 
     .toggle-menu {
@@ -19,10 +19,25 @@
         margin-block: 1em;
        }
 
+    .menu-drawer {
+        &::part(overlay) {
+            background-color: $overlay-color;
+        }
+        &::part(panel) {
+            background-color: $background-color;
+            padding: 1rem;
+        }
+        &::part(header) {
+            padding-block-end: 0.5rem;
+            font-size: 1.05em;
+            color: $dark-text-color;
+        }
+    }
+
     .app-nav {
         ul li {
             .active {
-                color: green;
+                color: $secondary-color;
             }
         }
     }

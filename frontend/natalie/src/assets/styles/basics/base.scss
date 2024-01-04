@@ -3,6 +3,9 @@
 }
 
 html {
+    :not(:defined) {
+        visibility: hidden;
+      }      
     -webkit-font-smoothing: antialiased;
     font-family: Assistant;
     font-size: $small-text;
