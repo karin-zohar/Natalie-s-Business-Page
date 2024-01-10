@@ -1,0 +1,33 @@
+.testimonials {
+    @include for-normal-layout{
+        height: 100vh;
+    }
+    // background-color: lightskyblue;
+
+    h2 {
+        font-size: 2rem;
+        padding-block-end: 1rem;
+    }
+    .carousel {
+
+        &::part(base) {
+            height: 60vh;
+        }
+        &::part(scroll-container) {
+            max-width: 90%;
+            // height: 100%;
+            // background-color: rgb(255, 169, 212);
+            justify-self: center;
+        }
+
+        .carousel-item-container {
+            height: max-content;
+            img {
+                height: 80%;
+            }
+            h2 {
+                background-color: red;
+            }
+        }
+    }
+}

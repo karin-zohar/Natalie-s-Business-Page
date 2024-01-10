@@ -20,3 +20,35 @@ export const contentParagraphs = [
     },
 ]
 
+export const testimonials = [
+    {
+        videoUrl: 'https://res.cloudinary.com/dqhfnvtca/image/upload/v1686176615/axfycusuwf74cxdgkme9.jpg',
+        videoAltTest: 'אלינה',
+        name: 'אלינה',
+        age: '24',
+    },
+    {
+        videoUrl: 'https://res.cloudinary.com/dqhfnvtca/image/upload/v1686177352/mqijx3zdafi7mlqgk9lq.jpg',
+        videoAltTest: 'נעם',
+        name: 'נעם',
+        age: '17',
+    },
+    {
+        videoUrl: 'https://res.cloudinary.com/dqhfnvtca/image/upload/v1686176643/nv7uhln3s3jxf0tigmre.jpg',
+        videoAltTest: 'ליאור',
+        name: 'ליאור',
+        age: '29',
+    },
+    {
+        videoUrl: 'https://res.cloudinary.com/dqhfnvtca/image/upload/v1686176615/axfycusuwf74cxdgkme9.jpg',
+        videoAltTest: 'שי',
+        name: 'שי',
+        age: '32',
+    },
+    {
+        videoUrl: 'https://res.cloudinary.com/dqhfnvtca/image/upload/v1686176567/uv1zpvz1f0rnfbivllxi.jpg',
+        videoAltTest: 'עדי',
+        name: 'עדי',
+        age: '25',
+    },
+]

@@ -1,6 +1,7 @@
 import { Hero } from '../cmps/hero'
 import { ContentParagraph } from '../cmps/content-paragraph'
 import {contentParagraphs} from '../constants/hompage-constants'
+import {Testimonials} from '../cmps/testimonials'
 
 export function HomePage() {
     return (
@@ -16,6 +17,10 @@ export function HomePage() {
                     </li>
                     )}
                 </ul>
+            </section>
+
+            <section className="testimonials">
+                <Testimonials />
             </section>
         </section>
     )
