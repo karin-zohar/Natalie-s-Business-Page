@@ -1,0 +1,27 @@
+.contact-form {
+    background-color: tan;
+    .form-container {
+        padding-block: 2rem;
+        
+        Form {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+            
+            *> {
+                padding-block: 1em;
+                padding-inline-end: 1em;
+                input {
+                    width:10em;
+                    height:2em;
+                }
+            }
+
+            .submit-btn {
+                width: 10rem;
+                height: 2rem;
+                align-self: end;
+            }
+        }
+    }
+}
