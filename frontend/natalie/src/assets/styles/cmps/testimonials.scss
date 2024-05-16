@@ -1,33 +1,37 @@
 .testimonials {
-    @include for-normal-layout{
-        height: 100vh;
-    }
-    // background-color: lightskyblue;
+    height: 100vh;
+    // background-color: green;
 
     h2 {
         font-size: 2rem;
         padding-block-end: 1rem;
     }
+
     .carousel {
 
         &::part(base) {
-            height: 60vh;
-        }
-        &::part(scroll-container) {
-            max-width: 90%;
-            // height: 100%;
-            // background-color: rgb(255, 169, 212);
-            justify-self: center;
+            height: 70vh;
+            // background-color: yellow;
         }
 
-        .carousel-item-container {
-            height: max-content;
-            img {
-                height: 80%;
-            }
-            h2 {
-                background-color: red;
+        &::part(scroll-container) {
+            max-width: 90%;
+            // background-color: pink;
+            justify-self: center;
+            
+            
+        }
+
+        .carousel-item {
+            article {
+                img {
+                    max-height: 85%;
+                }
+
+                h3 {
+                    padding-inline-start: 0.2em;
+                }
             }
         }
-    }
+        }
 }
